@@ -107,16 +107,8 @@ function deletes(id) {
     console.log(id1);
    var x= document.getElementById(id1).remove();
     $(".videt").remove();
-
-    //console.log(users);
-
-    users.splice(id1,1);
-
-    //console.log(users);
-    
+    users.splice(i,1);
     localStorage.allUsers = JSON.stringify(users);
-   
-    
   }
 
   
@@ -129,7 +121,6 @@ function deletes(id) {
     var id1 = (id).replace("edit", "data");
     // $("#edit_"+i).hide();
     var editdata = $("#" + id1).attr("contenteditable", true);
-      
     console.log(id1);
     console.log(editdata);
     $("#edit_" + i).attr('value', 'Save');
