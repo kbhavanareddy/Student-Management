@@ -102,7 +102,7 @@ function createTable(data, nrows) {
 
 //for delete
 function deletes(id) {
-    //var i = parseInt(id.split('_')[1]);
+    var i = parseInt(id.split('_')[1]);
     var id1 = (id + "").replace("delete", "data");
     console.log(id1);
    var x= document.getElementById(id1).remove();
