@@ -105,7 +105,7 @@ function deletes(id) {
     var i = parseInt(id.split('_')[1]);
     var id1 = (id + "").replace("delete", "data");
     console.log(id1);
-   var x= document.getElementById(id1).remove();
+    document.getElementById(id1).remove();
     $(".videt").remove();
     users.splice(i,1);
     localStorage.allUsers = JSON.stringify(users);
