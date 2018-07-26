@@ -208,7 +208,7 @@ function addStudent(){
 //filter
 function myFunction() {
 
-  var input, filter, table, tr, td, i;
+  var input, keyword, table, tr, td, i;
   input = document.getElementById("myinput");
   keyword = input.value.toUpperCase();
   table = document.getElementById("myTable");
